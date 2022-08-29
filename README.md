@@ -5,22 +5,8 @@
 - To allow a person to log their trips to different countries (MVP)
 - To allow them to see which countries they have left to visit \*
 
-### Run Commands
-| Environment |  Server  |  Client |
-|---------------|-------------|------|
-| DEV: |  nodemon | vite-dev-server |
-| PROD: |    node   |   *static file served* |
-
-### Hosting
-| Service |  Server  |  Database |
-|---------------|-------------|------|
-| local |  node | mongodb |
-| remote |    heroku   |   Mongodb Atlas |
-
 
 ## Data Shapes
-
-
 
 ### Entities
 
@@ -33,3 +19,24 @@
  - Profile (see your own trips)
  - Unvisited countries
  - Leaderboard - who has visited the most countries
+
+ #### Private Routes
+ <https://www.robinwieruch.de/react-router-private-routes/>
+
+---
+
+### Run Commands
+| Environment |  Server  |  Client |
+|---------------|-------------|------|
+| DEV: |  nodemon | vite-dev-server |
+| PROD: |    node   |   *static file served* |
+
+ ### Hosting
+| Service |  Server  |  Database |
+|---------------|-------------|------|
+| local |  node | mongodb |
+| remote |    heroku   |   Mongodb Atlas |
+
+#### ENV VARS
+MONGODB_URI (from Atlas)
+NPM_CONFIG_PRODUCTION false
